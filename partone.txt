@@ -1,0 +1,32 @@
+Insert using the unshift method
+Append using the push method
+
+
+
+Extra large array:
+
+insert 989.341522 ms <-- slower
+append 3.591451 ms
+
+Large array:
+
+insert 6.441323 ms <-- slower
+append 629.997 μs
+
+Medium array: 
+
+insert 165.704 μs <-- slower
+append 145.783 μs
+
+Small array: 
+
+insert 50.175 μs <-- faster
+append 108.407 μs
+
+Tiny array: 
+
+insert 37.849 μs <-- faster
+append 88.739 μs
+
+
+The function using the unshift method is faster up until the medium array, which has an array size of 1000. After medium, the difference between the two functions became more drastic. The function using the push method scales a lot better, seemingly to be more linear or consistent with the increase in time to run.
